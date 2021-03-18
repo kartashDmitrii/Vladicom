@@ -1,0 +1,130 @@
+section.index-contacts {
+  background: #F7F7F7; }
+  section.index-contacts .container {
+    display: grid;
+    position: static;
+    grid-template-columns: 60% 40%; }
+    @media (max-width: 920px) {
+      section.index-contacts .container {
+        grid-template-columns: 1fr; } }
+    section.index-contacts .container .text {
+      padding-top: 90px;
+      padding-right: 20px;
+      box-sizing: border-box; }
+      @media (max-width: 920px) {
+        section.index-contacts .container .text {
+          padding-bottom: 50px;
+          padding-left: 15px; } }
+      section.index-contacts .container .text .title {
+        margin: 0 0 40px 80px;
+        display: flex;
+        flex-direction: column; }
+        section.index-contacts .container .text .title p {
+          font-size: 18px;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: #282828;
+          margin: 0 0 16px; }
+        section.index-contacts .container .text .title span {
+          display: block;
+          max-width: 390px;
+          font-weight: 700;
+          font-size: 50px;
+          line-height: 50px;
+          text-transform: uppercase;
+          color: #282828; }
+      section.index-contacts .container .text .desc {
+        font-size: 18px;
+        line-height: 28px;
+        color: #282828;
+        margin: 0 0 45px; }
+      section.index-contacts .container .text .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative; }
+        section.index-contacts .container .text .info ul {
+          max-width: 375px;
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+          list-style: none; }
+          section.index-contacts .container .text .info ul li {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px; }
+            section.index-contacts .container .text .info ul li:last-child {
+              margin-bottom: 0; }
+            section.index-contacts .container .text .info ul li .name {
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 28px;
+              color: #00a759;
+              margin: 0 0 5px; }
+            section.index-contacts .container .text .info ul li .value {
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              font-size: 18px;
+              line-height: 28px;
+              color: #282828;
+              margin: 0; }
+              @media (max-width: 1024px) {
+                section.index-contacts .container .text .info ul li .value {
+                  font-size: 15px;
+                  line-height: 18px; } }
+              section.index-contacts .container .text .info ul li .value > * {
+                margin: 0 25px 0 0;
+                text-decoration: none;
+                color: inherit; }
+                section.index-contacts .container .text .info ul li .value > *:last-child {
+                  margin-right: 0; }
+        section.index-contacts .container .text .info .call-btn {
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 164px;
+          height: 164px;
+          border-radius: 50%;
+          background: url("../img/svg/phone.svg") center center/67px 67px no-repeat; }
+          section.index-contacts .container .text .info .call-btn:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            background: url("../img/circle-text.png") center center/100% 100% no-repeat;
+            animation: 12s linear infinite rotate; }
+    section.index-contacts .container .right-side {
+      position: relative;
+      height: 100%; }
+      @media (max-width: 920px) {
+        section.index-contacts .container .right-side {
+          height: 400px; } }
+      section.index-contacts .container .right-side .image {
+        width: calc(100vw / 2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%; }
+        @media (max-width: 920px) {
+          section.index-contacts .container .right-side .image {
+            width: 100%; } }
+        section.index-contacts .container .right-side .image img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center center; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }

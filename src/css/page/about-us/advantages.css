@@ -1,0 +1,95 @@
+section.advantages {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 140px;
+  position: relative; }
+  section.advantages:before {
+    content: '';
+    width: 54%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #F6F6F6; }
+  section.advantages:after {
+    content: '';
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #F6F6F6; }
+  section.advantages .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; }
+    section.advantages .container .left-side {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      padding-right: 150px;
+      padding-bottom: 78px;
+      box-sizing: border-box;
+      position: relative; }
+      section.advantages .container .left-side:after {
+        content: '';
+        width: 275px;
+        height: 1028px;
+        position: absolute;
+        right: -137px;
+        bottom: 30px;
+        background: url("../img/logo-white.svg") center center/100% 100% no-repeat;
+        z-index: -2; }
+      section.advantages .container .left-side .image {
+        width: 923px;
+        height: 445px;
+        position: relative;
+        margin-top: -122px;
+        right: 0;
+        align-self: flex-end;
+        margin-bottom: 135px; }
+        section.advantages .container .left-side .image img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%; }
+      section.advantages .container .left-side .title {
+        margin-bottom: 45px;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column; }
+        section.advantages .container .left-side .title p {
+          font-size: 18px;
+          line-height: 22px;
+          text-transform: uppercase;
+          color: #282828;
+          margin: 0 0 20px; }
+        section.advantages .container .left-side .title span {
+          font-weight: 700;
+          font-size: 45px;
+          line-height: 50px;
+          text-transform: uppercase;
+          color: #282828;
+          margin: 0; }
+      section.advantages .container .left-side .desc {
+        display: flex;
+        flex-direction: column; }
+        section.advantages .container .left-side .desc > * {
+          margin: 0 0 20px; }
+          section.advantages .container .left-side .desc > *:last-child {
+            margin-bottom: 0; }
+        section.advantages .container .left-side .desc p {
+          font-size: 18px;
+          line-height: 28px;
+          color: #282828; }
+    section.advantages .container .right-side {
+      width: 551px;
+      height: 826px;
+      position: relative;
+      right: -111px; }
+      section.advantages .container .right-side img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: right top; }

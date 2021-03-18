@@ -1,0 +1,54 @@
+section.info-about-us
+  position: relative
+  margin-bottom: 220px
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    left: -10%
+    width: 110%
+    height: 170%
+    margin: auto
+    background: url("../img/abut-us-info-img.png") center center / 100% 100%
+    transform: rotate(1.55deg)
+  .container
+    display: flex
+    align-items: center
+    justify-content: center
+    .count
+      display: flex
+      flex-direction: column
+      padding-right: 45px
+      margin-right: 35px
+      position: relative
+      &:after
+        content: ''
+        height: 100%
+        width: 3px
+        position: absolute
+        top: 0
+        right: 0
+        background: #b8b8b8
+      &:last-child
+        padding-right: 0
+        margin-right: 0
+        &:after
+          content: none
+      .number
+        font-weight: 700
+        font-size: 120px
+        line-height: 120px
+        text-transform: uppercase
+        color: #00a759
+        display: block
+        width: 275px
+        box-sizing: border-box
+        text-align: center
+      p
+        font-size: 18px
+        line-height: 21px
+        text-transform: uppercase
+        align-self: flex-end
+        margin: 0
+        color: #282828

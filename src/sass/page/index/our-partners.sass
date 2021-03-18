@@ -1,0 +1,89 @@
+section.our-partners
+  display: flex
+  flex-direction: column
+  margin-bottom: 150px
+  .title
+    margin-left: 80px
+    margin-bottom: 60px
+    display: flex
+    flex-direction: column
+    p
+      font-size: 18px
+      line-height: 22px
+      text-transform: uppercase
+      color: #282828
+      margin: 0 0 20px
+    span
+      display: block
+      font-weight: 700
+      font-size: 50px
+      line-height: 50px
+      text-transform: uppercase
+      color: #282828
+      margin: 0
+  .partner
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    @media (max-width: 920px)
+      flex-direction: column
+    .left-side
+      width: 515px
+      @media (max-width: 1200px)
+        width: 455px
+      @media (max-width: 920px)
+        margin: 0 auto
+      .image
+        width: 100%
+        height: auto
+        position: relative
+        display: flex
+        .info
+          position: absolute
+          bottom: 20px
+          left: 0
+          padding: 4px 40px
+          width: 370px
+          box-sizing: border-box
+          background: #00A759
+          display: flex
+          flex-direction: column
+          .name
+            font-weight: 700
+            font-size: 18px
+            line-height: 28px
+            color: #ffffff
+            margin: 0
+          .position
+            font-size: 14px
+            line-height: 18px
+            color: #ffffff
+            margin: 0
+    .right-side
+      width: calc(100% - 515px)
+      padding: 72px 20px 45px 80px
+      box-sizing: border-box
+      background: #F6F6F6
+      display: flex
+      flex-direction: column
+      @media (max-width: 1200px)
+        width: calc(100% - 455px)
+      @media (max-width: 920px)
+        width: 100%
+        padding-top: 110px
+        margin-top: -85px
+        position: relative
+        z-index: -1
+      .desc
+        margin-bottom: 95px
+        &>*
+          margin: 0 0 15px
+          &:last-child
+            margin-bottom: 0
+        p
+          font-size: 18px
+          line-height: 28px
+          color: #282828
+      .btn
+        align-self: flex-end
+        max-width: 230px

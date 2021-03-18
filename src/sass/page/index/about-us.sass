@@ -1,0 +1,78 @@
+section.about-us
+  display: flex
+  align-items: center
+  margin-bottom: 195px
+  .left-side
+    display: flex
+    flex-direction: column
+    position: relative
+    max-width: 910px
+    padding: 110px 80px 120px 0
+    box-sizing: border-box
+    &:after
+      content: ''
+      width: calc(((100vw - 1280px) / 2) + 100%)
+      height: 100%
+      position: absolute
+      top: 0
+      right: 0
+      background: url("../img/white-shadow.png") center center / cover no-repeat
+      z-index: -1
+      @media (max-width: 1200px)
+        width: calc(((100vw - 930px) / 2) + 100%)
+      @media (max-width: 920px)
+        width: 75vw
+    &:before
+      content: ''
+      width: calc(((100vw - 1280px) / 2) + 100%)
+      height: 100%
+      position: absolute
+      top: 0
+      right: 0
+      z-index: -1
+      background: linear-gradient(315.39deg, #F2F2F2 2.48%, #FFFFFF 98.88%)
+      @media (max-width: 1200px)
+        width: calc(((100vw - 930px) / 2) + 100%)
+      @media (max-width: 920px)
+        width: 75vw
+    .name
+      margin-left: 80px
+      display: flex
+      flex-direction: column
+      margin-bottom: 42px
+      p
+        font-size: 18px
+        line-height: 22px
+        text-transform: uppercase
+        color: #282828
+        margin: 0 0 20px
+        @media (max-width: 1200px)
+          font-size: 15px
+          line-height: 18px
+      .title
+        font-weight: 700
+        font-size: 45px
+        line-height: 50px
+        text-transform: uppercase
+        margin: 0
+        @media (max-width: 1200px)
+          font-size: 38px
+          line-height: 42px
+    .desc
+      &>*
+        margin: 0 0 10px
+        &:last-child
+          margin-bottom: 0
+      p
+        font-size: 18px
+        line-height: 28px
+        color: #282828
+  .btn
+    max-width: calc(100% - 910px)
+    margin-left: 70px
+    @media (max-width: 1365px)
+      margin-left: 30px
+      max-width: 220px
+    @media (max-width: 920px)
+      margin-left: 15px
+      margin-right: 15px

@@ -114,6 +114,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="tets">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="velopark">
         <serverdata>
           <mappings>

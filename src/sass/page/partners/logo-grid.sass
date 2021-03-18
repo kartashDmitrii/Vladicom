@@ -1,0 +1,22 @@
+section.logo-grid
+  margin-bottom: 170px
+  .grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-auto-rows: auto
+    border: solid #A7A7A7
+    border-width: 0 1px 1px 0
+    .elem
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 85px
+      border: solid #A7A7A7
+      border-width: 1px 0 0 1px
+      box-sizing: border-box
+      &:hover
+        img
+          filter: grayscale(0)
+      img
+        filter: grayscale(1)
+        transition: filter .3s

@@ -1,0 +1,145 @@
+section.contacts-page
+  display: flex
+  .left-side
+    display: flex
+    flex-direction: column
+    width: 50%
+    padding-bottom: 70px
+    padding-top: 95px
+    position: relative
+    z-index: 1
+    &:before
+      content: ''
+      width: 60vw
+      height: 100%
+      position: absolute
+      top: 0
+      right: -75px
+      background: #f7f7f7
+      z-index: -1
+    .title
+      display: flex
+      flex-direction: column
+      margin-bottom: 38px
+      margin-left: 80px
+      position: relative
+      z-index: 1
+      &:before
+        content: ''
+        width: 1200px
+        height: 100%
+        position: absolute
+        right: -180px
+        top: 0
+        z-index: -1
+        background: url("../img/contacts_BG.png") center center / cover no-repeat
+        transform: rotate(1.55deg)
+      p
+        font-size: 18px
+        line-height: 22px
+        text-transform: uppercase
+        color: #282828
+        margin: 0 0 20px
+      span
+        max-width: 395px
+        font-weight: 700
+        font-size: 50px
+        line-height: 50px
+        text-transform: uppercase
+        color: #282828
+        margin: 0
+        display: block
+    .text
+      margin-bottom: 45px
+      &>*
+        margin: 0 0 15px
+        &:last-child
+          margin-bottom: 0
+      p
+        font-size: 18px
+        line-height: 28px
+        color: #282828
+    .info
+      display: flex
+      align-items: center
+      justify-content: space-between
+      position: relative
+      ul
+        max-width: 375px
+        display: flex
+        flex-direction: column
+        padding: 0
+        margin: 0
+        list-style: none
+        li
+          display: flex
+          flex-direction: column
+          margin-bottom: 25px
+          &:last-child
+            margin-bottom: 0
+          .name
+            font-weight: 700
+            font-size: 18px
+            line-height: 28px
+            color: #00a759
+            margin: 0 0 5px
+          .value
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            font-size: 18px
+            line-height: 28px
+            color: #282828
+            margin: 0
+            &>*
+              margin: 0 25px 0 0
+              text-decoration: none
+              color: inherit
+              &:last-child
+                margin-right: 0
+      .call-btn
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        width: 164px
+        height: 164px
+        border-radius: 50%
+        background: url("../img/svg/phone.svg") center center / 67px 67px no-repeat
+        &:after
+          content: ''
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          margin: auto
+          width: 100%
+          height: 100%
+          background: url("../img/circle-text.png") center center /100% 100% no-repeat
+          animation: 12s linear infinite rotate
+  .right-side
+    width: calc(50% - 75px)
+    display: flex
+    flex-direction: column
+    margin-left: 75px
+    position: relative
+    z-index: 2
+    .image
+      width: 920px
+      height: auto
+      max-height: 320px
+      overflow: hidden
+      top: 0
+      left: 0
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    #map
+      flex: 1
+      width: 920px
+      iframe
+        width: 100%
+        height: 100%

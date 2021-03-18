@@ -1,0 +1,90 @@
+footer
+  padding: 65px 0 18px
+  background: #F8F8F8
+  .container
+    display: grid
+    grid-template-areas: "logo links politics" "upbtn upbtn upbtn"
+    align-items: center
+    justify-content: space-between
+    @media (max-width: 920px)
+      grid-template-areas: 'links links' 'upbtn upbtn' 'logo politics'
+    .logo
+      grid-area: logo
+      width: 202px
+      height: 54px
+      margin-right: 22px
+      position: relative
+      @media (max-width: 1200px)
+        width: 150px
+        height: 40px
+      &:before
+        content: ''
+        width: 8px
+        height: 8px
+        background: #dd2b1c
+        border: 2px solid #ffffff
+        position: absolute
+        top: 0
+        left: 17px
+        right: 0
+        margin: auto
+        border-radius: 50px
+        animation: .7s linear infinite alternate bounce
+    .links
+      grid-area: links
+      display: flex
+      align-items: center
+      flex: 1
+      justify-content: center
+      ul
+        display: flex
+        align-items: center
+        padding: 0
+        margin: 0
+        list-style: none
+        li
+          font-size: 18px
+          line-height: 22px
+          color: #282828
+          margin-right: 45px
+          @media (max-width: 1365px)
+            margin-right: 25px
+          @media (max-width: 1200px)
+            font-size: 15px
+            line-height: 18px
+            margin-right: 15px
+          &:last-child
+            margin-right: 0
+          a
+            color: inherit
+            text-decoration: inherit
+    .politics
+      grid-area: politics
+      display: flex
+      flex-direction: column
+      color: #282828
+      font-size: 13px
+      line-height: 16px
+      p
+        margin: 0 0 3px
+      a
+        color: inherit
+    &>a
+      grid-area: upbtn
+      font-size: 14px
+      line-height: 17px
+      color: #282828
+      padding-left: 13px
+      position: relative
+      text-decoration: none
+      margin: 35px auto 0
+      &:before
+        content: ''
+        width: 11px
+        height: 11px
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        background: url("../img/svg/up-arrow.svg") center center / 100% 100% no-repeat

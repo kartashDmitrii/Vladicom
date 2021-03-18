@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6100155a-d376-4cfb-8ad1-74a5231c1ed2" name="Default Changelist" comment="" />
+    <list default="true" id="6100155a-d376-4cfb-8ad1-74a5231c1ed2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/lib.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/lib.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/lib.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/lib.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/main-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html-components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-components/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html-components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/global/_global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/global/_global.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/global/_grid.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/global/_grid.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.sass" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,17 +33,48 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Sass File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1pWe9rfCvpV7Bdy1oPGgAebTfGn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\vladicom\src\html-components\global" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -46,7 +98,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615303124689</updated>
-      <workItem from="1615303126017" duration="425000" />
+      <workItem from="1615303126017" duration="67436000" />
+      <workItem from="1615792967530" duration="12240000" />
+      <workItem from="1615816745996" duration="409000" />
+      <workItem from="1615818553337" duration="46699000" />
     </task>
     <servers />
   </component>
@@ -54,6 +109,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1615879681594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615879681594" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1615817154225">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615817154225" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615303359379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -70,6 +133,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615303359379" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1615792967539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615792967539" />
+    <state x="-740" y="231" width="607" height="526" key="find.popup" timestamp="1615810260780">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-740" y="231" width="607" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615810260780" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1615894699881">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615894699881" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615303356324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

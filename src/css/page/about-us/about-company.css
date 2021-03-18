@@ -1,0 +1,71 @@
+section.about-company {
+  position: relative;
+  margin-bottom: 150px; }
+  section.about-company:before {
+    content: '';
+    width: 63vw;
+    height: calc(100% - 150px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(315.39deg, #F2F2F2 2.48%, #FFFFFF 98.88%);
+    z-index: -2; }
+  section.about-company:after {
+    content: '';
+    width: 63vw;
+    height: calc(100% - 150px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/white-shadow.png") center center/cover no-repeat;
+    z-index: -1; }
+  section.about-company .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    position: static; }
+    section.about-company .container .left-side {
+      padding: 110px 35px 60px 0;
+      display: flex;
+      flex-direction: column; }
+      section.about-company .container .left-side .title {
+        margin: 0 0 40px 80px;
+        display: flex;
+        flex-direction: column; }
+        section.about-company .container .left-side .title p {
+          font-size: 18px;
+          line-height: 22px;
+          text-transform: uppercase;
+          color: #282828;
+          margin: 0 0 20px; }
+        section.about-company .container .left-side .title span {
+          font-weight: 700;
+          font-size: 45px;
+          line-height: 50px;
+          text-transform: uppercase;
+          color: #282828; }
+      section.about-company .container .left-side .desc {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px; }
+        section.about-company .container .left-side .desc > * {
+          margin: 0 0 15px; }
+          section.about-company .container .left-side .desc > *:last-child {
+            margin-bottom: 0; }
+        section.about-company .container .left-side .desc p {
+          font-size: 18px;
+          line-height: 28px;
+          color: #282828; }
+      section.about-company .container .left-side .btn {
+        align-self: flex-end;
+        max-width: 245px; }
+    section.about-company .container .image {
+      margin-top: 80px;
+      height: calc(100% - 80px);
+      position: relative;
+      bottom: -30px; }
+      section.about-company .container .image img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: right center; }

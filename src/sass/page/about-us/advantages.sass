@@ -1,0 +1,96 @@
+section.advantages
+  display: flex
+  flex-direction: column
+  margin-bottom: 140px
+  position: relative
+  &:before
+    content: ''
+    width: 54%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    background: #F6F6F6
+  &:after
+    content: ''
+    width: 20%
+    height: 100%
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1
+    background: #F6F6F6
+  .container
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    .left-side
+      width: 55%
+      display: flex
+      flex-direction: column
+      padding-right: 150px
+      padding-bottom: 78px
+      box-sizing: border-box
+      position: relative
+      &:after
+        content: ''
+        width: 275px
+        height: 1028px
+        position: absolute
+        right: -137px
+        bottom: 30px
+        background: url("../img/logo-white.svg") center center / 100% 100% no-repeat
+        z-index: -2
+      .image
+        width: 923px
+        height: 445px
+        position: relative
+        margin-top: -122px
+        right: 0
+        align-self: flex-end
+        margin-bottom: 135px
+        img
+          object-fit: cover
+          height: 100%
+          width: 100%
+      .title
+        margin-bottom: 45px
+        margin-left: 80px
+        display: flex
+        flex-direction: column
+        p
+          font-size: 18px
+          line-height: 22px
+          text-transform: uppercase
+          color: #282828
+          margin: 0 0 20px
+        span
+          font-weight: 700
+          font-size: 45px
+          line-height: 50px
+          text-transform: uppercase
+          color: #282828
+          margin: 0
+      .desc
+        display: flex
+        flex-direction: column
+        &>*
+          margin: 0 0 20px
+          &:last-child
+            margin-bottom: 0
+        p
+          font-size: 18px
+          line-height: 28px
+          color: #282828
+    .right-side
+      width: 551px
+      height: 826px
+      position: relative
+      right: -111px
+      img
+        object-fit: cover
+        width: 100%
+        height: 100%
+        object-position: right top
+

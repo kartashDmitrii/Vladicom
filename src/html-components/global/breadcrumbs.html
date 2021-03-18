@@ -1,0 +1,12 @@
+<section class="breadcrumbs container">
+    <ul class="list">
+        @@for(var i = 0; i < list.length; i++){
+        <li>
+            <a href="`+list[i].ref+`">`+list[i].name+`</a>
+        </li>
+        }
+        <li>
+            <span>@@curr</span>
+        </li>
+    </ul>
+</section>

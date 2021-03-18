@@ -1,0 +1,118 @@
+section.top-block {
+  position: relative; }
+  section.top-block .container {
+    display: flex;
+    position: static; }
+    @media (max-width: 920px) {
+      section.top-block .container {
+        flex-direction: column;
+        position: relative; } }
+    section.top-block .container .left-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 45%;
+      height: calc(870px - 105px);
+      box-sizing: border-box;
+      position: relative;
+      z-index: 2; }
+      @media (max-width: 1024px) {
+        section.top-block .container .left-side {
+          width: 40%;
+          justify-content: flex-start;
+          height: auto; } }
+      @media (max-width: 920px) {
+        section.top-block .container .left-side {
+          position: static;
+          width: 100%; } }
+      section.top-block .container .left-side .title {
+        max-width: 686px;
+        font-weight: 700;
+        font-size: 75px;
+        line-height: 70px;
+        text-transform: uppercase;
+        margin: 0 0 28px; }
+        @media (max-width: 1200px) {
+          section.top-block .container .left-side .title {
+            font-size: 64px;
+            line-height: 68px; } }
+        @media (max-width: 1024px) {
+          section.top-block .container .left-side .title {
+            font-size: 48px;
+            line-height: 56px; } }
+      section.top-block .container .left-side p {
+        font-size: 25px;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin-bottom: 68px;
+        position: relative; }
+        @media (max-width: 1365px) {
+          section.top-block .container .left-side p {
+            font-size: 21px;
+            line-height: 24px; } }
+        @media (max-width: 1200px) {
+          section.top-block .container .left-side p {
+            font-size: 18px;
+            line-height: 21px; } }
+        section.top-block .container .left-side p:after {
+          content: '';
+          width: 777px;
+          height: 98px;
+          position: absolute;
+          top: -20px;
+          left: -155px;
+          z-index: -1;
+          background: url("../img/top-block_text_BG.png") center center/100% 100% no-repeat; }
+          @media (max-width: 920px) {
+            section.top-block .container .left-side p:after {
+              width: 125vw;
+              left: -20vw;
+              top: -40px; } }
+      section.top-block .container .left-side .btn {
+        margin-bottom: 110px;
+        align-self: flex-end; }
+        @media (max-width: 920px) {
+          section.top-block .container .left-side .btn {
+            margin-bottom: 40px; } }
+      section.top-block .container .left-side .custom-pagination {
+        margin-bottom: 40px; }
+        @media (max-width: 920px) {
+          section.top-block .container .left-side .custom-pagination {
+            position: absolute;
+            right: 0;
+            bottom: 0; } }
+        section.top-block .container .left-side .custom-pagination .swiper-pagination-bullet {
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background: #525252;
+          margin-right: 20px;
+          outline: none; }
+          section.top-block .container .left-side .custom-pagination .swiper-pagination-bullet:last-child {
+            margin-right: 0; }
+          section.top-block .container .left-side .custom-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #00A759; }
+    section.top-block .container .right-side {
+      display: flex;
+      position: absolute;
+      top: -105px;
+      right: 0;
+      width: 52.5%;
+      height: 870px;
+      z-index: 1; }
+      @media (max-width: 1024px) {
+        section.top-block .container .right-side {
+          height: auto; } }
+      @media (max-width: 920px) {
+        section.top-block .container .right-side {
+          position: static;
+          width: 100vw;
+          max-width: 500px;
+          align-self: flex-end;
+          margin-right: -15px; } }
+      section.top-block .container .right-side .swiper-container {
+        margin: 0;
+        width: 100%; }
+      section.top-block .container .right-side img {
+        width: 100%;
+        height: 100%; }

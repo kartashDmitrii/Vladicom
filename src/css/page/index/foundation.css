@@ -1,0 +1,127 @@
+section.foundation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 195px; }
+  @media (max-width: 920px) {
+    section.foundation {
+      margin-bottom: 70px; } }
+  section.foundation .title {
+    margin: 0 0 50px 80px; }
+    section.foundation .title p {
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #282828;
+      margin: 0 0 20px; }
+      @media (max-width: 1200px) {
+        section.foundation .title p {
+          font-size: 15px;
+          line-height: 18px; } }
+    section.foundation .title span {
+      display: block;
+      max-width: 985px;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 50px;
+      text-transform: uppercase;
+      color: #282828;
+      margin: 0; }
+      @media (max-width: 1200px) {
+        section.foundation .title span {
+          font-size: 42px;
+          line-height: 48px; } }
+  section.foundation .desc {
+    margin: 0 0 80px;
+    max-width: 670px; }
+    section.foundation .desc > * {
+      margin: 0 0 10px; }
+      section.foundation .desc > *:last-child {
+        margin-bottom: 0; }
+    section.foundation .desc p {
+      font-size: 18px;
+      line-height: 28px;
+      color: #282828; }
+  section.foundation .flex {
+    display: flex;
+    flex-direction: column; }
+    section.foundation .flex .block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 70px; }
+      @media (max-width: 920px) {
+        section.foundation .flex .block {
+          flex-direction: column; } }
+      section.foundation .flex .block:last-child {
+        margin-bottom: 0; }
+      section.foundation .flex .block .left-side {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 605px); }
+        @media (max-width: 1200px) {
+          section.foundation .flex .block .left-side {
+            width: calc(100% - 445px); } }
+        @media (max-width: 920px) {
+          section.foundation .flex .block .left-side {
+            width: 100%;
+            margin-bottom: 40px; } }
+        section.foundation .flex .block .left-side .name {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 30px;
+          color: #282828;
+          margin: 0 0 15px 60px; }
+        section.foundation .flex .block .left-side .list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column; }
+          section.foundation .flex .block .left-side .list li {
+            font-size: 18px;
+            line-height: 21px;
+            color: #282828;
+            margin-bottom: 20px;
+            padding-left: 50px;
+            position: relative; }
+            section.foundation .flex .block .left-side .list li:before {
+              content: '';
+              width: 35px;
+              height: 1px;
+              background: #c0c0c0;
+              position: absolute;
+              left: 0;
+              top: 10px; }
+            section.foundation .flex .block .left-side .list li:after {
+              content: '';
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background: #00a759;
+              position: absolute;
+              left: 25px;
+              top: 5.5px; }
+            section.foundation .flex .block .left-side .list li:last-child {
+              margin-bottom: 0; }
+      section.foundation .flex .block .right-side .image {
+        position: relative;
+        width: 580px;
+        height: 290px; }
+        @media (max-width: 1200px) {
+          section.foundation .flex .block .right-side .image {
+            width: 420px;
+            height: 220px; } }
+        section.foundation .flex .block .right-side .image:before {
+          content: '';
+          width: 150px;
+          height: 170px;
+          top: -20px;
+          left: -10px;
+          position: absolute;
+          z-index: -1;
+          background: #00A759; }
+        section.foundation .flex .block .right-side .image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center; }

@@ -1,0 +1,46 @@
+.news-grid
+  display: grid
+  grid-template-columns: repeat(7, 1fr)
+  grid-column-gap: 20px
+  grid-auto-rows: 1fr
+  grid-row-gap: 30px
+  grid-auto-flow: dense
+  @media (max-width: 920px)
+    grid-template-columns: repeat(3, 1fr)
+  .block
+    display: flex
+    flex-direction: column
+    position: relative
+    &:nth-child(6n - 4):not(.big)
+      margin-top: 40px
+    &:nth-child(6n):not(.big)
+      margin-top: 40px
+    &:nth-child(6n - 2):not(.big)
+      margin-top: 20px
+    .image
+      width: 100%
+      position: relative
+      margin-bottom: 23px
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    .text
+      text-decoration: none
+      margin: 0 0 0 20px
+      font-size: 18px
+      line-height: 24px
+      text-transform: uppercase
+      color: #282828
+  .big
+    grid-column-end: span 3
+    @media (max-width: 920px)
+      grid-column-end: span 2
+    .image
+      height: 360px
+  .small
+    grid-column-end: span 2
+    @media (max-width: 920px)
+      grid-column-end: span 1
+    .image
+      height: 250px
