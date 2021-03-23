@@ -7,6 +7,9 @@ section.foundation {
       margin-bottom: 70px; } }
   section.foundation .title {
     margin: 0 0 50px 80px; }
+    @media (max-width: 576px) {
+      section.foundation .title {
+        margin: 0 0 30px; } }
     section.foundation .title p {
       font-size: 18px;
       line-height: 22px;
@@ -16,7 +19,8 @@ section.foundation {
       @media (max-width: 1200px) {
         section.foundation .title p {
           font-size: 15px;
-          line-height: 18px; } }
+          line-height: 18px;
+          margin-bottom: 8px; } }
     section.foundation .title span {
       display: block;
       max-width: 985px;
@@ -30,9 +34,16 @@ section.foundation {
         section.foundation .title span {
           font-size: 42px;
           line-height: 48px; } }
+      @media (max-width: 576px) {
+        section.foundation .title span {
+          font-size: 28px;
+          line-height: 31px; } }
   section.foundation .desc {
     margin: 0 0 80px;
     max-width: 670px; }
+    @media (max-width: 576px) {
+      section.foundation .desc {
+        margin-bottom: 30px; } }
     section.foundation .desc > * {
       margin: 0 0 10px; }
       section.foundation .desc > *:last-child {
@@ -41,6 +52,10 @@ section.foundation {
       font-size: 18px;
       line-height: 28px;
       color: #282828; }
+      @media (max-width: 576px) {
+        section.foundation .desc p {
+          font-size: 15px;
+          line-height: 21px; } }
   section.foundation .flex {
     display: flex;
     flex-direction: column; }
@@ -71,6 +86,11 @@ section.foundation {
           line-height: 30px;
           color: #282828;
           margin: 0 0 15px 60px; }
+          @media (max-width: 576px) {
+            section.foundation .flex .block .left-side .name {
+              font-size: 25px;
+              line-height: 28px;
+              margin: 0 0 10px; } }
         section.foundation .flex .block .left-side .list {
           list-style: none;
           padding: 0;
@@ -84,6 +104,11 @@ section.foundation {
             margin-bottom: 20px;
             padding-left: 50px;
             position: relative; }
+            @media (max-width: 576px) {
+              section.foundation .flex .block .left-side .list li {
+                font-size: 15px;
+                line-height: 21px;
+                margin-bottom: 10px; } }
             section.foundation .flex .block .left-side .list li:before {
               content: '';
               width: 35px;
@@ -111,6 +136,10 @@ section.foundation {
           section.foundation .flex .block .right-side .image {
             width: 420px;
             height: 220px; } }
+        @media (max-width: 576px) {
+          section.foundation .flex .block .right-side .image {
+            width: 100%;
+            max-width: 420px; } }
         section.foundation .flex .block .right-side .image:before {
           content: '';
           width: 150px;

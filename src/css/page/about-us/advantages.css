@@ -3,6 +3,9 @@ section.advantages {
   flex-direction: column;
   margin-bottom: 140px;
   position: relative; }
+  @media (max-width: 767px) {
+    section.advantages {
+      margin-bottom: 125px; } }
   section.advantages:before {
     content: '';
     width: 54%;
@@ -12,6 +15,9 @@ section.advantages {
     left: 0;
     z-index: -1;
     background: #F6F6F6; }
+    @media (max-width: 767px) {
+      section.advantages:before {
+        width: 80%; } }
   section.advantages:after {
     content: '';
     width: 20%;
@@ -21,10 +27,17 @@ section.advantages {
     right: 0;
     z-index: -1;
     background: #F6F6F6; }
+    @media (max-width: 767px) {
+      section.advantages:after {
+        content: none; } }
   section.advantages .container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between; }
+    @media (max-width: 767px) {
+      section.advantages .container {
+        flex-direction: column;
+        position: static; } }
     section.advantages .container .left-side {
       width: 55%;
       display: flex;
@@ -33,6 +46,11 @@ section.advantages {
       padding-bottom: 78px;
       box-sizing: border-box;
       position: relative; }
+      @media (max-width: 767px) {
+        section.advantages .container .left-side {
+          width: 100%;
+          padding-right: 0;
+          position: static; } }
       section.advantages .container .left-side:after {
         content: '';
         width: 275px;
@@ -42,6 +60,9 @@ section.advantages {
         bottom: 30px;
         background: url("../img/logo-white.svg") center center/100% 100% no-repeat;
         z-index: -2; }
+        @media (max-width: 767px) {
+          section.advantages .container .left-side:after {
+            right: -23px; } }
       section.advantages .container .left-side .image {
         width: 923px;
         height: 445px;
@@ -50,6 +71,13 @@ section.advantages {
         right: 0;
         align-self: flex-end;
         margin-bottom: 135px; }
+        @media (max-width: 767px) {
+          section.advantages .container .left-side .image {
+            margin-top: -82px;
+            width: calc(100% + 30px);
+            height: auto;
+            margin-bottom: 53px;
+            right: -15px; } }
         section.advantages .container .left-side .image img {
           object-fit: cover;
           height: 100%;
@@ -59,12 +87,28 @@ section.advantages {
         margin-left: 80px;
         display: flex;
         flex-direction: column; }
+        @media (max-width: 920px) {
+          section.advantages .container .left-side .title {
+            margin-left: 0; } }
+        @media (max-width: 767px) {
+          section.advantages .container .left-side .title {
+            width: 80%;
+            margin-left: 80px; } }
+        @media (max-width: 576px) {
+          section.advantages .container .left-side .title {
+            margin-left: 0;
+            margin-bottom: 20px; } }
         section.advantages .container .left-side .title p {
           font-size: 18px;
           line-height: 22px;
           text-transform: uppercase;
           color: #282828;
           margin: 0 0 20px; }
+          @media (max-width: 576px) {
+            section.advantages .container .left-side .title p {
+              font-size: 15px;
+              line-height: 18px;
+              margin-bottom: 10px; } }
         section.advantages .container .left-side .title span {
           font-weight: 700;
           font-size: 45px;
@@ -72,9 +116,16 @@ section.advantages {
           text-transform: uppercase;
           color: #282828;
           margin: 0; }
+          @media (max-width: 576px) {
+            section.advantages .container .left-side .title span {
+              font-size: 31px;
+              line-height: 35px; } }
       section.advantages .container .left-side .desc {
         display: flex;
         flex-direction: column; }
+        @media (max-width: 576px) {
+          section.advantages .container .left-side .desc {
+            width: 80%; } }
         section.advantages .container .left-side .desc > * {
           margin: 0 0 20px; }
           section.advantages .container .left-side .desc > *:last-child {
@@ -83,11 +134,22 @@ section.advantages {
           font-size: 18px;
           line-height: 28px;
           color: #282828; }
+          @media (max-width: 576px) {
+            section.advantages .container .left-side .desc p {
+              font-size: 15px;
+              line-height: 21px; } }
     section.advantages .container .right-side {
       width: 551px;
       height: 826px;
       position: relative;
       right: -111px; }
+      @media (max-width: 767px) {
+        section.advantages .container .right-side {
+          width: 335px;
+          height: 470px;
+          right: -202px;
+          position: absolute;
+          top: calc(100% + 125px); } }
       section.advantages .container .right-side img {
         object-fit: cover;
         width: 100%;

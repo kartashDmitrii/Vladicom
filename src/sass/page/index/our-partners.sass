@@ -2,17 +2,25 @@ section.our-partners
   display: flex
   flex-direction: column
   margin-bottom: 150px
+  @media (max-width: 576px)
+    margin-bottom: 70px
   .title
     margin-left: 80px
     margin-bottom: 60px
     display: flex
     flex-direction: column
+    @media (max-width: 576px)
+      margin: 0 0 35px
     p
       font-size: 18px
       line-height: 22px
       text-transform: uppercase
       color: #282828
       margin: 0 0 20px
+      @media (max-width: 576px)
+        font-size: 15px
+        line-height: 18px
+        margin-bottom: 8px
     span
       display: block
       font-weight: 700
@@ -21,6 +29,9 @@ section.our-partners
       text-transform: uppercase
       color: #282828
       margin: 0
+      @media (max-width: 576px)
+        font-size: 31px
+        line-height: 35px
   .partner
     display: flex
     align-items: flex-end
@@ -33,6 +44,9 @@ section.our-partners
         width: 455px
       @media (max-width: 920px)
         margin: 0 auto
+      @media (max-width: 576px)
+        width: 100%
+        max-width: 455px
       .image
         width: 100%
         height: auto
@@ -48,17 +62,24 @@ section.our-partners
           background: #00A759
           display: flex
           flex-direction: column
+          @media (max-width: 576px)
+            width: 250px
           .name
             font-weight: 700
             font-size: 18px
             line-height: 28px
             color: #ffffff
             margin: 0
+            @media (max-width: 576px)
+              font-size: 15px
+              line-height: 18px
           .position
             font-size: 14px
             line-height: 18px
             color: #ffffff
             margin: 0
+            @media (max-width: 576px)
+              font-size: 13px
     .right-side
       width: calc(100% - 515px)
       padding: 72px 20px 45px 80px
@@ -74,6 +95,7 @@ section.our-partners
         margin-top: -85px
         position: relative
         z-index: -1
+        padding-left: 15px
       .desc
         margin-bottom: 95px
         &>*
@@ -84,6 +106,11 @@ section.our-partners
           font-size: 18px
           line-height: 28px
           color: #282828
+          @media (max-width: 576px)
+            font-size: 15px
+            line-height: 21px
       .btn
         align-self: flex-end
         max-width: 230px
+        @media (max-width: 576px)
+          max-width: 175px

@@ -1,6 +1,8 @@
 section.about-company
   position: relative
   margin-bottom: 150px
+  @media (max-width: 920px)
+    margin-bottom: 180px
   &:before
     content: ''
     width: 63vw
@@ -10,6 +12,8 @@ section.about-company
     left: 0
     background: linear-gradient(315.39deg, #F2F2F2 2.48%, #FFFFFF 98.88%)
     z-index: -2
+    @media (max-width: 767px)
+      width: 100vw
   &:after
     content: ''
     width: 63vw
@@ -19,35 +23,53 @@ section.about-company
     left: 0
     background: url("../img/white-shadow.png") center center / cover no-repeat
     z-index: -1
+    @media (max-width: 767px)
+      width: 100vw
   .container
     display: grid
     grid-template-columns: 60% 40%
     align-items: center
     position: static
+    @media (max-width: 920px)
+      grid-template-columns: 1fr
     .left-side
       padding: 110px 35px 60px 0
       display: flex
       flex-direction: column
+      @media (max-width: 576px)
+        margin-bottom: 475px
       .title
         margin: 0 0 40px 80px
         display: flex
         flex-direction: column
+        @media (max-width: 767px)
+          margin-left: 0
+          margin-bottom: 30px
         p
           font-size: 18px
           line-height: 22px
           text-transform: uppercase
           color: #282828
           margin: 0 0 20px
+          @media (max-width: 767px)
+            font-size: 15px
+            line-height: 20px
+            margin-bottom: 8px
         span
           font-weight: 700
           font-size: 45px
           line-height: 50px
           text-transform: uppercase
           color: #282828
+          @media (max-width: 767px)
+            font-size: 31px
+            line-height: 35px
       .desc
         display: flex
         flex-direction: column
         margin-bottom: 150px
+        @media (max-width: 920px)
+          margin-bottom: 35px
         &>*
           margin: 0 0 15px
           &:last-child
@@ -56,6 +78,9 @@ section.about-company
           font-size: 18px
           line-height: 28px
           color: #282828
+          @media (max-width: 576px)
+            font-size: 15px
+            line-height: 21px
       .btn
         align-self: flex-end
         max-width: 245px
@@ -64,8 +89,20 @@ section.about-company
       height: calc(100% - 80px)
       position: relative
       bottom: -30px
+      @media (max-width: 920px)
+        margin-top: 0
+        height: auto
+      @media (max-width: 576px)
+        margin-right: 70px
+        width: 711px
+        height: 475px
+        left: -407px
+        position: absolute
+        bottom: 0
       img
         object-fit: cover
         width: 100%
         height: 100%
         object-position: right center
+        @media (max-width: 1365px)
+          object-position: center center

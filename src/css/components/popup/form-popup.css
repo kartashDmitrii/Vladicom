@@ -1,0 +1,160 @@
+.wrapper .popup.form-popup {
+  flex-direction: column; }
+  @media (max-width: 767px) {
+    .wrapper .popup.form-popup {
+      padding-bottom: 95px; } }
+  @media (max-width: 576px) {
+    .wrapper .popup.form-popup {
+      padding-bottom: 135px; } }
+  .wrapper .popup.form-popup .title {
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px; }
+    @media (max-width: 865px) {
+      .wrapper .popup.form-popup .title {
+        margin-left: 0; } }
+    @media (max-width: 767px) {
+      .wrapper .popup.form-popup .title {
+        margin-bottom: 15px; } }
+    .wrapper .popup.form-popup .title p {
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #282828;
+      margin: 0 0 20px; }
+      @media (max-width: 767px) {
+        .wrapper .popup.form-popup .title p {
+          font-size: 15px;
+          line-height: 18px;
+          margin-bottom: 5px; } }
+    .wrapper .popup.form-popup .title span {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 50px;
+      max-width: 555px;
+      text-transform: uppercase;
+      color: #282828; }
+      @media (max-width: 865px) {
+        .wrapper .popup.form-popup .title span {
+          max-width: 665px; } }
+      @media (max-width: 767px) {
+        .wrapper .popup.form-popup .title span {
+          font-size: 31px;
+          line-height: 35px; } }
+  .wrapper .popup.form-popup .text {
+    max-width: 665px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #282828;
+    margin: 0 0 60px; }
+    @media (max-width: 767px) {
+      .wrapper .popup.form-popup .text {
+        font-size: 15px;
+        line-height: 18px; } }
+  .wrapper .popup.form-popup .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; }
+    @media (max-width: 767px) {
+      .wrapper .popup.form-popup .info {
+        position: static; } }
+    .wrapper .popup.form-popup .info form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 370px; }
+      @media (max-width: 920px) {
+        .wrapper .popup.form-popup .info form {
+          max-width: 300px; } }
+      @media (max-width: 767px) {
+        .wrapper .popup.form-popup .info form {
+          max-width: none; } }
+      .wrapper .popup.form-popup .info form label {
+        margin-bottom: 30px; }
+        .wrapper .popup.form-popup .info form label:last-child {
+          margin-bottom: 0; }
+      .wrapper .popup.form-popup .info form label:not(.custom-checkbox) {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .wrapper .popup.form-popup .info form label:not(.custom-checkbox) input {
+          width: 100%;
+          font-size: 18px;
+          line-height: 22px;
+          color: #282828;
+          padding: 3px 20px;
+          border: solid #00A759;
+          border-width: 0 0 1px 0;
+          background: transparent; }
+          @media (max-width: 767px) {
+            .wrapper .popup.form-popup .info form label:not(.custom-checkbox) input {
+              box-sizing: border-box; } }
+          @media (max-width: 576px) {
+            .wrapper .popup.form-popup .info form label:not(.custom-checkbox) input {
+              font-size: 13px; } }
+      .wrapper .popup.form-popup .info form .custom-checkbox {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 14px;
+        color: #857a7a;
+        user-select: none; }
+        .wrapper .popup.form-popup .info form .custom-checkbox input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+          .wrapper .popup.form-popup .info form .custom-checkbox input:hover ~ span {
+            background-color: rgba(0, 167, 89, 0.4); }
+          .wrapper .popup.form-popup .info form .custom-checkbox input:checked ~ span {
+            background-color: #00A759; }
+            .wrapper .popup.form-popup .info form .custom-checkbox input:checked ~ span:after {
+              display: block; }
+        .wrapper .popup.form-popup .info form .custom-checkbox span {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          height: 11px;
+          width: 11px;
+          border: 1px solid #00a759; }
+    .wrapper .popup.form-popup .info .call-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 164px;
+      height: 164px;
+      border-radius: 50%;
+      background: url("../img/svg/phone.svg") center center/67px 67px no-repeat; }
+      @media (max-width: 920px) {
+        .wrapper .popup.form-popup .info .call-btn {
+          width: 120px;
+          height: 120px; } }
+      @media (max-width: 767px) {
+        .wrapper .popup.form-popup .info .call-btn {
+          width: 100px;
+          height: 100px;
+          top: auto;
+          bottom: 25px;
+          right: 15px; } }
+      .wrapper .popup.form-popup .info .call-btn:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        background: url("../img/circle-text.png") center center/100% 100% no-repeat;
+        animation: 12s linear infinite rotate; }

@@ -1,6 +1,8 @@
 section.product-info
   position: relative
   margin-bottom: 150px
+  @media (max-width: 767px)
+    margin-bottom: 70px
   &:after
     content: ''
     width: calc(50% - 20px)
@@ -10,6 +12,8 @@ section.product-info
     right: 0
     background: #F6F6F6
     z-index: -2
+    @media (max-width: 767px)
+      content: none
   .container
     display: grid
     grid-template-columns: calc(50% - 90px) calc(50% - 90px)
@@ -17,40 +21,84 @@ section.product-info
     align-items: flex-start
     grid-column-gap: 180px
     grid-row-gap: 100px
+    @media (max-width: 920px)
+      grid-template-columns: 100%
+    @media (max-width: 767px)
+      grid-row-gap: 50px
+      &>div:nth-child(odd)
+        position: relative
+        z-index: 1
+        &:after
+          content: ''
+          width: 200vw
+          height: calc(100% + 30px)
+          left: -100vw
+          top: -15px
+          position: absolute
+          background-color: #F6F6F6
+          z-index: -1
     .image-with-text
       display: flex
       flex-direction: column
       align-items: flex-end
+      @media (max-width: 920px)
+        flex-direction: column-reverse
       .image
         max-height: 527px
         max-width: 100%
         margin-bottom: 24px
         margin-right: 52px
+        @media (max-width: 920px)
+          margin: 0 auto
+        @media (max-width: 767px)
+          width: 100%
+          height: auto
         img
           height: 100%
           width: auto
           object-fit: cover
+          @media (max-width: 767px)
+            width: 100%
+            height: auto
+            max-height: 400px
+            object-fit: contain
       .text
         margin: 0 0 0 40px
         font-size: 18px
         line-height: 28px
         color: #282828
+        @media (max-width: 920px)
+          margin: 0 0 20px
+        @media (max-width: 576px)
+          font-size: 15px
+          line-height: 18px
     .desc-product
       display: flex
       flex-direction: column
       margin-top: 83px
+      @media (max-width: 920px)
+        margin-top: 0
       .title
         margin-left: 80px
         display: flex
         flex-direction: column
         max-width: 360px
         margin-bottom: 37px
+        @media (max-width: 576px)
+          width: 100%
+          margin-left: 0
+          max-width: none
+          margin-bottom: 15px
         .product-name
           font-size: 18px
           line-height: 22px
           text-transform: uppercase
           color: #282828
           margin: 0 0 10px
+          @media (max-width: 576px)
+            font-size: 15px
+            line-height: 18px
+            margin-bottom: 8px
         .cosmetic-line-name
           font-weight: 700
           font-size: 30px
@@ -58,6 +106,10 @@ section.product-info
           text-transform: uppercase
           color: #282828
           margin: 0
+          @media (max-width: 576px)
+            font-size: 31px
+            line-height: 36px
+            margin-bottom: 15px
       .desc
         display: flex
         flex-direction: column
@@ -69,6 +121,9 @@ section.product-info
           font-size: 18px
           line-height: 28px
           color: #282828
+          @media (max-width: 576px)
+            font-size: 15px
+            line-height: 18px
     .desc-with-image
       display: flex
       flex-direction: column
@@ -81,6 +136,11 @@ section.product-info
         line-height: 35px
         text-transform: uppercase
         color: #282828
+        @media (max-width: 576px)
+          font-size: 25px
+          line-height: 28px
+          margin-bottom: 14px
+          margin-left: 0
       .desc
         display: flex
         flex-direction: column
@@ -93,6 +153,9 @@ section.product-info
           font-size: 18px
           line-height: 28px
           color: #282828
+          @media (max-width: 576px)
+            font-size: 15px
+            line-height: 18px
       .image
         width: 428px
         height: 490px
@@ -117,3 +180,15 @@ section.product-info
         line-height: 210px
         text-transform: uppercase
         color: #282828
+        @media (max-width: 1250px)
+          font-size: 125px
+          line-height: 148px
+        @media (max-width: 1024px)
+          transform: none
+          left: 0
+        @media (max-width: 576px)
+          font-size: 88px
+          line-height: 107px
+        @media (max-width: 420px)
+          font-size: 71px
+          line-height: 75px

@@ -4,15 +4,24 @@ section.our-propose {
   margin-bottom: 185px; }
   @media (max-width: 920px) {
     section.our-propose {
-      margin-bottom: 70px; } }
+      margin-bottom: 150px; } }
   section.our-propose .title {
     margin-bottom: 55px;
     margin-left: 80px; }
+    @media (max-width: 576px) {
+      section.our-propose .title {
+        margin-left: 0;
+        margin-bottom: 35px; } }
     section.our-propose .title p {
       font-size: 18px;
       line-height: 22px;
       text-transform: uppercase;
       margin: 0 0 20px; }
+      @media (max-width: 576px) {
+        section.our-propose .title p {
+          font-size: 15px;
+          line-height: 18px;
+          margin-bottom: 8px; } }
     section.our-propose .title span {
       display: block;
       max-width: 700px;
@@ -21,6 +30,10 @@ section.our-propose {
       line-height: 50px;
       text-transform: uppercase;
       margin: 0; }
+      @media (max-width: 576px) {
+        section.our-propose .title span {
+          font-size: 31px;
+          line-height: 35px; } }
   section.our-propose .grid .btn {
     position: absolute;
     top: 0;
@@ -28,3 +41,9 @@ section.our-propose {
     left: 0;
     margin: auto;
     height: max-content; }
+    @media (max-width: 767px) {
+      section.our-propose .grid .btn {
+        margin-top: 35px;
+        left: auto;
+        right: 0;
+        bottom: 60px; } }

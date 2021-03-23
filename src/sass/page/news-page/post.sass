@@ -2,11 +2,15 @@ section.post
   display: flex
   flex-direction: column
   margin-bottom: 195px
+  @media (max-width: 576px)
+    margin-bottom: 70px
   .image
     width: calc(100% - 80px)
     height: auto
     max-height: 378px
     overflow: hidden
+    @media (max-width: 767px)
+      width: 100%
     img
       width: 100%
       height: 100%
@@ -22,16 +26,34 @@ section.post
     background: #F6F6F6
     box-sizing: border-box
     overflow: hidden
+    @media (max-width: 1365px)
+      padding: 120px 70px 80px 120px
+    @media (max-width: 920px)
+      padding: 80px 50px 80px 60px
+    @media (max-width: 767px)
+      width: calc(100% - 35px)
+      margin-left: 35px
+      margin-top: -60px
+    @media (max-width: 576px)
+      padding: 45px 15px 70px 20px
+    @media (max-width: 360px)
+      margin-left: 0
+      width: 100%
     .title
       display: flex
       flex-direction: column
       margin-bottom: 20px
+      @media (max-width: 576px)
+        margin-bottom: 15px
       p
         font-size: 14px
         line-height: 17px
         text-transform: uppercase
         color: #282828
         margin: 0 0 10px
+        @media (max-width: 576px)
+          font-size: 13px
+          line-height: 16px
       span
         max-width: 500px
         font-size: 30px
@@ -40,6 +62,12 @@ section.post
         text-transform: uppercase
         color: #282828
         margin: 0
+        @media (max-width: 576px)
+          font-size: 25px
+          line-height: 28px
+        @media (max-width: 360px)
+          font-size: 21px
+          line-height: 25px
     .desc
       display: flex
       flex-direction: column
@@ -51,6 +79,9 @@ section.post
         font-size: 18px
         line-height: 28px
         color: #282828
+        @media (max-width: 576px)
+          font-size: 15px
+          line-height: 21px
       blockquote
         max-width: 555px
         position: relative
@@ -62,6 +93,9 @@ section.post
         line-height: 28px
         color: #00a759
         z-index: 1
+        @media (max-width: 576px)
+          font-size: 15px
+          line-height: 21px
         &:before
           content: ''
           width: 1259px
@@ -78,6 +112,9 @@ section.post
       right: 50px
       display: flex
       align-items: center
+      @media (max-width: 576px)
+        bottom: 30px
+        right: 10px
       span
         display: block
         font-weight: 600

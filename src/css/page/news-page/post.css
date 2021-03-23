@@ -2,11 +2,17 @@ section.post {
   display: flex;
   flex-direction: column;
   margin-bottom: 195px; }
+  @media (max-width: 576px) {
+    section.post {
+      margin-bottom: 70px; } }
   section.post .image {
     width: calc(100% - 80px);
     height: auto;
     max-height: 378px;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      section.post .image {
+        width: 100%; } }
     section.post .image img {
       width: 100%;
       height: 100%;
@@ -22,16 +28,41 @@ section.post {
     background: #F6F6F6;
     box-sizing: border-box;
     overflow: hidden; }
+    @media (max-width: 1365px) {
+      section.post .news-post {
+        padding: 120px 70px 80px 120px; } }
+    @media (max-width: 920px) {
+      section.post .news-post {
+        padding: 80px 50px 80px 60px; } }
+    @media (max-width: 767px) {
+      section.post .news-post {
+        width: calc(100% - 35px);
+        margin-left: 35px;
+        margin-top: -60px; } }
+    @media (max-width: 576px) {
+      section.post .news-post {
+        padding: 45px 15px 70px 20px; } }
+    @media (max-width: 360px) {
+      section.post .news-post {
+        margin-left: 0;
+        width: 100%; } }
     section.post .news-post .title {
       display: flex;
       flex-direction: column;
       margin-bottom: 20px; }
+      @media (max-width: 576px) {
+        section.post .news-post .title {
+          margin-bottom: 15px; } }
       section.post .news-post .title p {
         font-size: 14px;
         line-height: 17px;
         text-transform: uppercase;
         color: #282828;
         margin: 0 0 10px; }
+        @media (max-width: 576px) {
+          section.post .news-post .title p {
+            font-size: 13px;
+            line-height: 16px; } }
       section.post .news-post .title span {
         max-width: 500px;
         font-size: 30px;
@@ -40,6 +71,14 @@ section.post {
         text-transform: uppercase;
         color: #282828;
         margin: 0; }
+        @media (max-width: 576px) {
+          section.post .news-post .title span {
+            font-size: 25px;
+            line-height: 28px; } }
+        @media (max-width: 360px) {
+          section.post .news-post .title span {
+            font-size: 21px;
+            line-height: 25px; } }
     section.post .news-post .desc {
       display: flex;
       flex-direction: column; }
@@ -51,6 +90,10 @@ section.post {
         font-size: 18px;
         line-height: 28px;
         color: #282828; }
+        @media (max-width: 576px) {
+          section.post .news-post .desc p {
+            font-size: 15px;
+            line-height: 21px; } }
       section.post .news-post .desc blockquote {
         max-width: 555px;
         position: relative;
@@ -62,6 +105,10 @@ section.post {
         line-height: 28px;
         color: #00a759;
         z-index: 1; }
+        @media (max-width: 576px) {
+          section.post .news-post .desc blockquote {
+            font-size: 15px;
+            line-height: 21px; } }
         section.post .news-post .desc blockquote:before {
           content: '';
           width: 1259px;
@@ -78,6 +125,10 @@ section.post {
       right: 50px;
       display: flex;
       align-items: center; }
+      @media (max-width: 576px) {
+        section.post .news-post .user-info {
+          bottom: 30px;
+          right: 10px; } }
       section.post .news-post .user-info span {
         display: block;
         font-weight: 600;

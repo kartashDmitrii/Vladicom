@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>vedicom</title>
+    <title>vladicom</title>
     <link rel="stylesheet" href="css/lib.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,6 +20,10 @@
         @@include('./html-components/index/index-contacts.html')
     </main>
     @@include('./html-components/footer.html')
+    <div class="wrapper close">
+        @@include('./html-components/global/popups/form-popup.html')
+        @@include('./html-components/global/popups/success-popup.html')
+    </div>
 <script src="js/lib.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="js/main-min.js"></script>

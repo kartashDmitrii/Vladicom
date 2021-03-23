@@ -1,5 +1,7 @@
 section.contacts-page
   display: flex
+  @media (max-width: 1024px)
+    flex-direction: column
   .left-side
     display: flex
     flex-direction: column
@@ -8,6 +10,13 @@ section.contacts-page
     padding-top: 95px
     position: relative
     z-index: 1
+    @media (max-width: 1024px)
+      width: 100%
+      box-sizing: border-box
+      padding-left: 15px
+      padding-right: 15px
+    @media (max-width: 576px)
+      padding-top: 48px
     &:before
       content: ''
       width: 60vw
@@ -17,6 +26,15 @@ section.contacts-page
       right: -75px
       background: #f7f7f7
       z-index: -1
+      @media (max-width: 1024px)
+        width: 100vw
+        right: -15px
+      @media (max-width: 767px)
+        width: 100%
+        right: 0
+      @media (max-width: 576px)
+        width: 100vw
+        right: -15px
     .title
       display: flex
       flex-direction: column
@@ -24,6 +42,8 @@ section.contacts-page
       margin-left: 80px
       position: relative
       z-index: 1
+      @media (max-width: 767px)
+        margin-left: 0
       &:before
         content: ''
         width: 1200px
@@ -40,6 +60,10 @@ section.contacts-page
         text-transform: uppercase
         color: #282828
         margin: 0 0 20px
+        @media (max-width: 576px)
+          font-size: 13px
+          line-height: 16px
+          margin-bottom: 10px
       span
         max-width: 395px
         font-weight: 700
@@ -49,8 +73,15 @@ section.contacts-page
         color: #282828
         margin: 0
         display: block
+        @media (max-width: 1024px)
+          max-width: none
+        @media (max-width: 576px)
+          font-size: 25px
+          line-height: 28px
     .text
       margin-bottom: 45px
+      @media (max-width: 576px)
+        margin-bottom: 5px
       &>*
         margin: 0 0 15px
         &:last-child
@@ -59,6 +90,9 @@ section.contacts-page
         font-size: 18px
         line-height: 28px
         color: #282828
+        @media (max-width: 576px)
+          font-size: 15px
+          line-height: 21px
     .info
       display: flex
       align-items: center
@@ -83,6 +117,9 @@ section.contacts-page
             line-height: 28px
             color: #00a759
             margin: 0 0 5px
+            @media (max-width: 576px)
+              font-size: 15px
+              line-height: 28px
           .value
             display: flex
             align-items: center
@@ -91,6 +128,9 @@ section.contacts-page
             line-height: 28px
             color: #282828
             margin: 0
+            @media (max-width: 576px)
+              font-size: 15px
+              line-height: 21px
             &>*
               margin: 0 25px 0 0
               text-decoration: none
@@ -107,6 +147,20 @@ section.contacts-page
         height: 164px
         border-radius: 50%
         background: url("../img/svg/phone.svg") center center / 67px 67px no-repeat
+        @media (max-width: 1365px)
+          width: 120px
+          height: 120px
+          right: -20px
+        @media (max-width: 1024px)
+          width: 164px
+          height: 164px
+          right: 15px
+        @media (max-width: 767px)
+          width: 120px
+          height: 120px
+          top: 0
+          bottom: auto
+          right: -25px
         &:after
           content: ''
           position: absolute
@@ -126,6 +180,9 @@ section.contacts-page
     margin-left: 75px
     position: relative
     z-index: 2
+    @media (max-width: 1024px)
+      width: 100%
+      margin-left: 0
     .image
       width: 920px
       height: auto
@@ -133,6 +190,19 @@ section.contacts-page
       overflow: hidden
       top: 0
       left: 0
+      @media (max-width: 1365px)
+        width: 630px
+      @media (max-width: 1024px)
+        width: 100vw
+        position: relative
+        left: -15px
+      @media (max-width: 767px)
+        width: 100%
+        left: 0
+      @media (max-width: 576px)
+        width: 100vw
+        position: relative
+        left: -15px
       img
         width: 100%
         height: 100%
@@ -140,6 +210,23 @@ section.contacts-page
     #map
       flex: 1
       width: 920px
+      @media (max-width: 1365px)
+        width: 630px
+      @media (max-width: 1200px)
+        width: 520px
+      @media (max-width: 1024px)
+        width: 100vw
+        position: relative
+        left: -15px
+        height: 320px
+      @media (max-width: 767px)
+        width: 100%
+        left: 0
+      @media (max-width: 576px)
+        width: 100vw
+        position: relative
+        left: -15px
+        height: 490px
       iframe
         width: 100%
         height: 100%

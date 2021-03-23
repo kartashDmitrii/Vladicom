@@ -17,6 +17,9 @@ footer
       @media (max-width: 1200px)
         width: 150px
         height: 40px
+      @media (max-width: 576px)
+        width: 120px
+        height: 30px
       &:before
         content: ''
         width: 8px
@@ -30,6 +33,10 @@ footer
         margin: auto
         border-radius: 50px
         animation: .7s linear infinite alternate bounce
+        @media (max-width: 576px)
+          width: 4px
+          height: 4px
+          left: 9px
     .links
       grid-area: links
       display: flex
@@ -42,6 +49,9 @@ footer
         padding: 0
         margin: 0
         list-style: none
+        @media (max-width: 576px)
+          flex-wrap: wrap
+          justify-content: center
         li
           font-size: 18px
           line-height: 22px
@@ -53,6 +63,12 @@ footer
             font-size: 15px
             line-height: 18px
             margin-right: 15px
+          @media (max-width: 576px)
+            text-align: center
+            margin-right: 20px
+            font-size: 13px
+            line-height: 15px
+            margin-bottom: 10px
           &:last-child
             margin-right: 0
           a
@@ -65,6 +81,10 @@ footer
       color: #282828
       font-size: 13px
       line-height: 16px
+      @media (max-width: 576px)
+        font-size: 8px
+        line-height: 13px
+        text-align: right
       p
         margin: 0 0 3px
       a
@@ -78,6 +98,11 @@ footer
       position: relative
       text-decoration: none
       margin: 35px auto 0
+      @media (max-width: 920px)
+        margin-bottom: 15px
+      @media (max-width: 576px)
+        margin-bottom: 40px
+        margin-top: 15px
       &:before
         content: ''
         width: 11px

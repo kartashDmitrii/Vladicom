@@ -40,6 +40,11 @@ section.top-block {
           section.top-block .container .left-side .title {
             font-size: 48px;
             line-height: 56px; } }
+        @media (max-width: 576px) {
+          section.top-block .container .left-side .title {
+            font-size: 34px;
+            line-height: 45px;
+            margin-bottom: 20px; } }
       section.top-block .container .left-side p {
         font-size: 25px;
         line-height: 30px;
@@ -54,6 +59,10 @@ section.top-block {
           section.top-block .container .left-side p {
             font-size: 18px;
             line-height: 21px; } }
+        @media (max-width: 576px) {
+          section.top-block .container .left-side p {
+            font-size: 15px;
+            line-height: 20px; } }
         section.top-block .container .left-side p:after {
           content: '';
           width: 777px;
@@ -68,6 +77,9 @@ section.top-block {
               width: 125vw;
               left: -20vw;
               top: -40px; } }
+          @media (max-width: 576px) {
+            section.top-block .container .left-side p:after {
+              top: -20px; } }
       section.top-block .container .left-side .btn {
         margin-bottom: 110px;
         align-self: flex-end; }
@@ -110,6 +122,9 @@ section.top-block {
           max-width: 500px;
           align-self: flex-end;
           margin-right: -15px; } }
+      @media (max-width: 576px) {
+        section.top-block .container .right-side {
+          margin-right: -30px; } }
       section.top-block .container .right-side .swiper-container {
         margin: 0;
         width: 100%; }

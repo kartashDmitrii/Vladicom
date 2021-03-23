@@ -1,6 +1,9 @@
 section.about-company {
   position: relative;
   margin-bottom: 150px; }
+  @media (max-width: 920px) {
+    section.about-company {
+      margin-bottom: 180px; } }
   section.about-company:before {
     content: '';
     width: 63vw;
@@ -10,6 +13,9 @@ section.about-company {
     left: 0;
     background: linear-gradient(315.39deg, #F2F2F2 2.48%, #FFFFFF 98.88%);
     z-index: -2; }
+    @media (max-width: 767px) {
+      section.about-company:before {
+        width: 100vw; } }
   section.about-company:after {
     content: '';
     width: 63vw;
@@ -19,35 +25,60 @@ section.about-company {
     left: 0;
     background: url("../img/white-shadow.png") center center/cover no-repeat;
     z-index: -1; }
+    @media (max-width: 767px) {
+      section.about-company:after {
+        width: 100vw; } }
   section.about-company .container {
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
     position: static; }
+    @media (max-width: 920px) {
+      section.about-company .container {
+        grid-template-columns: 1fr; } }
     section.about-company .container .left-side {
       padding: 110px 35px 60px 0;
       display: flex;
       flex-direction: column; }
+      @media (max-width: 576px) {
+        section.about-company .container .left-side {
+          margin-bottom: 475px; } }
       section.about-company .container .left-side .title {
         margin: 0 0 40px 80px;
         display: flex;
         flex-direction: column; }
+        @media (max-width: 767px) {
+          section.about-company .container .left-side .title {
+            margin-left: 0;
+            margin-bottom: 30px; } }
         section.about-company .container .left-side .title p {
           font-size: 18px;
           line-height: 22px;
           text-transform: uppercase;
           color: #282828;
           margin: 0 0 20px; }
+          @media (max-width: 767px) {
+            section.about-company .container .left-side .title p {
+              font-size: 15px;
+              line-height: 20px;
+              margin-bottom: 8px; } }
         section.about-company .container .left-side .title span {
           font-weight: 700;
           font-size: 45px;
           line-height: 50px;
           text-transform: uppercase;
           color: #282828; }
+          @media (max-width: 767px) {
+            section.about-company .container .left-side .title span {
+              font-size: 31px;
+              line-height: 35px; } }
       section.about-company .container .left-side .desc {
         display: flex;
         flex-direction: column;
         margin-bottom: 150px; }
+        @media (max-width: 920px) {
+          section.about-company .container .left-side .desc {
+            margin-bottom: 35px; } }
         section.about-company .container .left-side .desc > * {
           margin: 0 0 15px; }
           section.about-company .container .left-side .desc > *:last-child {
@@ -56,6 +87,10 @@ section.about-company {
           font-size: 18px;
           line-height: 28px;
           color: #282828; }
+          @media (max-width: 576px) {
+            section.about-company .container .left-side .desc p {
+              font-size: 15px;
+              line-height: 21px; } }
       section.about-company .container .left-side .btn {
         align-self: flex-end;
         max-width: 245px; }
@@ -64,8 +99,23 @@ section.about-company {
       height: calc(100% - 80px);
       position: relative;
       bottom: -30px; }
+      @media (max-width: 920px) {
+        section.about-company .container .image {
+          margin-top: 0;
+          height: auto; } }
+      @media (max-width: 576px) {
+        section.about-company .container .image {
+          margin-right: 70px;
+          width: 711px;
+          height: 475px;
+          left: -407px;
+          position: absolute;
+          bottom: 0; } }
       section.about-company .container .image img {
         object-fit: cover;
         width: 100%;
         height: 100%;
         object-position: right center; }
+        @media (max-width: 1365px) {
+          section.about-company .container .image img {
+            object-position: center center; } }

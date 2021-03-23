@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>vedicom</title>
+    <title>vladicom</title>
     <link rel="stylesheet" href="css/lib.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,8 +23,8 @@
             <li><a href="#">UA</a></li>
         </ul>
         <ul class="links">
-            <li class="has_child current">
-                <a href="#"><span>О нас</span></a>
+            <li class="has_child">
+                <a href="about-us.html"><span>О нас</span></a>
                 <ul class="sub_menu">
                     <li class="has_child">
                         <a href="#"><span>Cat 1</span></a>
@@ -48,10 +48,10 @@
                     <li><a href="#"><span>Cat 4</span></a></li>
                 </ul>
             </li>
-            <li class="has_child">
-                <a href="#"><span>Наш продукт</span></a>
+            <li class="has_child current">
+                <a href="our-product.html"><span>Наш продукт</span></a>
                 <ul class="sub_menu">
-                    <li class="has_child"><a href="#"><span>Cat 1</span></a></li>
+                    <li><a href="#"><span>Cat 1</span></a></li>
                     <li class="has_child">
                         <a href="#"><span>Cat 2</span></a>
                         <ul class="sub_menu">
@@ -73,12 +73,14 @@
                     <li><a href="#"><span>Cat 4</span></a></li>
                 </ul>
             </li>
-            <li><a href="#"><span>Партнеры</span></a></li>
-            <li><a href="#"><span>Новости</span></a></li>
-            <li><a href="#"><span>Контакты</span></a></li>
+            <li><a href="partners.html"><span>Партнеры</span></a></li>
+            <li><a href="news.html"><span>Новости</span></a></li>
+            <li><a href="contacts.html"><span>Контакты</span></a></li>
         </ul>
     </nav>
-    <div class="burger"></div>
+    <div class="burger">
+        <span></span>
+    </div>
 </header>
     <main>
         <section class="top-block">
@@ -304,7 +306,7 @@
                         <p class="value">пн вс: 09:00 - 18:00</p>
                     </li>
                 </ul>
-                <a href="#" class="call-btn"></a>
+                <a href="#" class="call-btn" data-popup="success-popup"></a>
             </div>
         </div>
         <div class="right-side" data-aos="fade-left">
@@ -336,6 +338,42 @@
         <a href="#">Наверх</a>
     </div>
 </footer>
+    <div class="wrapper close">
+            <div class="form-popup popup">
+        <div class="title">
+            <p>запись</p>
+            <span>рыбный текст заголовок</span>
+        </div>
+        <p class="text">
+            Сайт рыбатекст поможет дизайнеру, вебмастеру сгенерировать несколько абзацев более менее
+            осмысленного текста рыбы
+        </p>
+        <div class="info">
+            <form>
+                <label>
+                    <input type="text" name="name" placeholder="Ваше имя">
+                </label>
+                <label>
+                    <input type="tel" name="phone" placeholder="Ваш телефон">
+                </label>
+                <label class="custom-checkbox">
+                    Согласие на обработку персональных данных
+                    <input type="checkbox" name="personal-data">
+                    <span></span>
+                </label>
+            </form>
+            <a href="#" class="call-btn"></a>
+        </div>
+        <div class="close"></div>
+    </div>
+        <div class="success-popup popup">
+            <span>Все супер!</span>
+            <p class="text">Ваша заявка успешно отправлена</p>
+            <p class="desc">Сайт рыбатекст поможет дизайнеру, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы</p>
+            <a href="/">Вернуться на главную</a>
+            <div class="close"></div>
+        </div>
+    </div>
 <script src="js/lib.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="js/main-min.js"></script>

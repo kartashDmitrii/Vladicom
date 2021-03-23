@@ -1,6 +1,9 @@
 section.product-info {
   position: relative;
   margin-bottom: 150px; }
+  @media (max-width: 767px) {
+    section.product-info {
+      margin-bottom: 70px; } }
   section.product-info:after {
     content: '';
     width: calc(50% - 20px);
@@ -10,6 +13,9 @@ section.product-info {
     right: 0;
     background: #F6F6F6;
     z-index: -2; }
+    @media (max-width: 767px) {
+      section.product-info:after {
+        content: none; } }
   section.product-info .container {
     display: grid;
     grid-template-columns: calc(50% - 90px) calc(50% - 90px);
@@ -17,40 +23,95 @@ section.product-info {
     align-items: flex-start;
     grid-column-gap: 180px;
     grid-row-gap: 100px; }
+    @media (max-width: 920px) {
+      section.product-info .container {
+        grid-template-columns: 100%; } }
+    @media (max-width: 767px) {
+      section.product-info .container {
+        grid-row-gap: 50px; }
+        section.product-info .container > div:nth-child(odd) {
+          position: relative;
+          z-index: 1; }
+          section.product-info .container > div:nth-child(odd):after {
+            content: '';
+            width: 200vw;
+            height: calc(100% + 30px);
+            left: -100vw;
+            top: -15px;
+            position: absolute;
+            background-color: #F6F6F6;
+            z-index: -1; } }
     section.product-info .container .image-with-text {
       display: flex;
       flex-direction: column;
       align-items: flex-end; }
+      @media (max-width: 920px) {
+        section.product-info .container .image-with-text {
+          flex-direction: column-reverse; } }
       section.product-info .container .image-with-text .image {
         max-height: 527px;
         max-width: 100%;
         margin-bottom: 24px;
         margin-right: 52px; }
+        @media (max-width: 920px) {
+          section.product-info .container .image-with-text .image {
+            margin: 0 auto; } }
+        @media (max-width: 767px) {
+          section.product-info .container .image-with-text .image {
+            width: 100%;
+            height: auto; } }
         section.product-info .container .image-with-text .image img {
           height: 100%;
           width: auto;
           object-fit: cover; }
+          @media (max-width: 767px) {
+            section.product-info .container .image-with-text .image img {
+              width: 100%;
+              height: auto;
+              max-height: 400px;
+              object-fit: contain; } }
       section.product-info .container .image-with-text .text {
         margin: 0 0 0 40px;
         font-size: 18px;
         line-height: 28px;
         color: #282828; }
+        @media (max-width: 920px) {
+          section.product-info .container .image-with-text .text {
+            margin: 0 0 20px; } }
+        @media (max-width: 576px) {
+          section.product-info .container .image-with-text .text {
+            font-size: 15px;
+            line-height: 18px; } }
     section.product-info .container .desc-product {
       display: flex;
       flex-direction: column;
       margin-top: 83px; }
+      @media (max-width: 920px) {
+        section.product-info .container .desc-product {
+          margin-top: 0; } }
       section.product-info .container .desc-product .title {
         margin-left: 80px;
         display: flex;
         flex-direction: column;
         max-width: 360px;
         margin-bottom: 37px; }
+        @media (max-width: 576px) {
+          section.product-info .container .desc-product .title {
+            width: 100%;
+            margin-left: 0;
+            max-width: none;
+            margin-bottom: 15px; } }
         section.product-info .container .desc-product .title .product-name {
           font-size: 18px;
           line-height: 22px;
           text-transform: uppercase;
           color: #282828;
           margin: 0 0 10px; }
+          @media (max-width: 576px) {
+            section.product-info .container .desc-product .title .product-name {
+              font-size: 15px;
+              line-height: 18px;
+              margin-bottom: 8px; } }
         section.product-info .container .desc-product .title .cosmetic-line-name {
           font-weight: 700;
           font-size: 30px;
@@ -58,6 +119,11 @@ section.product-info {
           text-transform: uppercase;
           color: #282828;
           margin: 0; }
+          @media (max-width: 576px) {
+            section.product-info .container .desc-product .title .cosmetic-line-name {
+              font-size: 31px;
+              line-height: 36px;
+              margin-bottom: 15px; } }
       section.product-info .container .desc-product .desc {
         display: flex;
         flex-direction: column; }
@@ -69,6 +135,10 @@ section.product-info {
           font-size: 18px;
           line-height: 28px;
           color: #282828; }
+          @media (max-width: 576px) {
+            section.product-info .container .desc-product .desc p {
+              font-size: 15px;
+              line-height: 18px; } }
     section.product-info .container .desc-with-image {
       display: flex;
       flex-direction: column;
@@ -81,6 +151,12 @@ section.product-info {
         line-height: 35px;
         text-transform: uppercase;
         color: #282828; }
+        @media (max-width: 576px) {
+          section.product-info .container .desc-with-image .title {
+            font-size: 25px;
+            line-height: 28px;
+            margin-bottom: 14px;
+            margin-left: 0; } }
       section.product-info .container .desc-with-image .desc {
         display: flex;
         flex-direction: column;
@@ -93,6 +169,10 @@ section.product-info {
           font-size: 18px;
           line-height: 28px;
           color: #282828; }
+          @media (max-width: 576px) {
+            section.product-info .container .desc-with-image .desc p {
+              font-size: 15px;
+              line-height: 18px; } }
       section.product-info .container .desc-with-image .image {
         width: 428px;
         height: 490px;
@@ -117,3 +197,19 @@ section.product-info {
         line-height: 210px;
         text-transform: uppercase;
         color: #282828; }
+        @media (max-width: 1250px) {
+          section.product-info .container .desc-with-image .name {
+            font-size: 125px;
+            line-height: 148px; } }
+        @media (max-width: 1024px) {
+          section.product-info .container .desc-with-image .name {
+            transform: none;
+            left: 0; } }
+        @media (max-width: 576px) {
+          section.product-info .container .desc-with-image .name {
+            font-size: 88px;
+            line-height: 107px; } }
+        @media (max-width: 420px) {
+          section.product-info .container .desc-with-image .name {
+            font-size: 71px;
+            line-height: 75px; } }

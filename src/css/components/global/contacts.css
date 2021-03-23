@@ -4,20 +4,44 @@ section.contacts {
     display: grid;
     position: static;
     grid-template-columns: 60% 40%; }
+    @media (max-width: 1365px) {
+      section.contacts .container {
+        grid-template-columns: 70% 30%; } }
+    @media (max-width: 767px) {
+      section.contacts .container {
+        grid-template-columns: 1fr; } }
     section.contacts .container .text {
       padding-top: 90px;
       padding-right: 20px;
       box-sizing: border-box; }
+      @media (max-width: 767px) {
+        section.contacts .container .text {
+          padding-right: 0;
+          padding-top: 45px;
+          padding-bottom: 153px;
+          position: relative; } }
       section.contacts .container .text .title {
         margin: 0 0 40px 80px;
         display: flex;
         flex-direction: column; }
+        @media (max-width: 1200px) {
+          section.contacts .container .text .title {
+            margin-left: 40px; } }
+        @media (max-width: 576px) {
+          section.contacts .container .text .title {
+            margin-left: 0;
+            margin-bottom: 20px; } }
         section.contacts .container .text .title p {
           font-size: 18px;
           line-height: 25px;
           text-transform: uppercase;
           color: #282828;
           margin: 0 0 16px; }
+          @media (max-width: 576px) {
+            section.contacts .container .text .title p {
+              font-size: 15px;
+              line-height: 18px;
+              margin-bottom: 8px; } }
         section.contacts .container .text .title span {
           display: block;
           font-weight: 700;
@@ -25,21 +49,42 @@ section.contacts {
           line-height: 50px;
           text-transform: uppercase;
           color: #282828; }
+          @media (max-width: 940px) {
+            section.contacts .container .text .title span {
+              font-size: 40px;
+              line-height: 40px; } }
+          @media (max-width: 576px) {
+            section.contacts .container .text .title span {
+              font-size: 31px;
+              line-height: 31px; } }
       section.contacts .container .text .desc {
         font-size: 18px;
         line-height: 28px;
         color: #282828;
         margin: 0 0 45px; }
+        @media (max-width: 576px) {
+          section.contacts .container .text .desc {
+            font-size: 15px;
+            line-height: 18px; } }
       section.contacts .container .text .info {
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative; }
+        @media (max-width: 767px) {
+          section.contacts .container .text .info {
+            position: static; } }
         section.contacts .container .text .info form {
           display: flex;
           flex-direction: column;
           width: 100%;
           max-width: 370px; }
+          @media (max-width: 920px) {
+            section.contacts .container .text .info form {
+              max-width: 300px; } }
+          @media (max-width: 767px) {
+            section.contacts .container .text .info form {
+              max-width: none; } }
           section.contacts .container .text .info form label {
             margin-bottom: 30px; }
             section.contacts .container .text .info form label:last-child {
@@ -57,6 +102,12 @@ section.contacts {
               border: solid #00A759;
               border-width: 0 0 1px 0;
               background: transparent; }
+              @media (max-width: 767px) {
+                section.contacts .container .text .info form label:not(.custom-checkbox) input {
+                  box-sizing: border-box; } }
+              @media (max-width: 576px) {
+                section.contacts .container .text .info form label:not(.custom-checkbox) input {
+                  font-size: 13px; } }
           section.contacts .container .text .info form .custom-checkbox {
             display: flex;
             align-items: center;
@@ -64,7 +115,7 @@ section.contacts {
             padding-left: 25px;
             cursor: pointer;
             font-size: 12px;
-            line-height: 28px;
+            line-height: 14px;
             color: #857a7a;
             user-select: none; }
             section.contacts .container .text .info form .custom-checkbox input {
@@ -98,6 +149,14 @@ section.contacts {
           height: 164px;
           border-radius: 50%;
           background: url("../img/svg/phone.svg") center center/67px 67px no-repeat; }
+          @media (max-width: 920px) {
+            section.contacts .container .text .info .call-btn {
+              width: 120px;
+              height: 120px; } }
+          @media (max-width: 767px) {
+            section.contacts .container .text .info .call-btn {
+              top: auto;
+              bottom: 25px; } }
           section.contacts .container .text .info .call-btn:after {
             content: '';
             position: absolute;
@@ -113,12 +172,18 @@ section.contacts {
     section.contacts .container .right-side {
       position: relative;
       height: 100%; }
+      @media (max-width: 767px) {
+        section.contacts .container .right-side {
+          height: 400px; } }
       section.contacts .container .right-side .image {
         width: calc(100vw / 2);
         position: absolute;
         top: 0;
         left: 0;
         height: 100%; }
+        @media (max-width: 767px) {
+          section.contacts .container .right-side .image {
+            width: 100%; } }
         section.contacts .container .right-side .image img {
           height: 100%;
           width: 100%;

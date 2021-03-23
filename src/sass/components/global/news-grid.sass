@@ -7,16 +7,23 @@
   grid-auto-flow: dense
   @media (max-width: 920px)
     grid-template-columns: repeat(3, 1fr)
+  @media (max-width: 767px)
+    grid-template-columns: 1fr
+    grid-auto-rows: auto
   .block
     display: flex
     flex-direction: column
     position: relative
-    &:nth-child(6n - 4):not(.big)
-      margin-top: 40px
-    &:nth-child(6n):not(.big)
-      margin-top: 40px
-    &:nth-child(6n - 2):not(.big)
-      margin-top: 20px
+    a
+      text-decoration: inherit
+      color: inherit
+    @media (min-width: 768px)
+      &:nth-child(6n - 4):not(.big)
+        margin-top: 40px
+      &:nth-child(6n):not(.big)
+        margin-top: 40px
+      &:nth-child(6n - 2):not(.big)
+        margin-top: 20px
     .image
       width: 100%
       position: relative
@@ -36,11 +43,15 @@
     grid-column-end: span 3
     @media (max-width: 920px)
       grid-column-end: span 2
+    @media (max-width: 767px)
+      grid-column-end: span 1
     .image
-      height: 360px
+      height: 330px
   .small
     grid-column-end: span 2
     @media (max-width: 920px)
       grid-column-end: span 1
     .image
       height: 250px
+      @media (max-width: 767px)
+        height: 330px

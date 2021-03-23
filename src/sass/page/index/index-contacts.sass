@@ -17,12 +17,18 @@ section.index-contacts
         margin: 0 0 40px 80px
         display: flex
         flex-direction: column
+        @media (max-width: 576px)
+          margin: 0 0 30px
         p
           font-size: 18px
           line-height: 25px
           text-transform: uppercase
           color: #282828
           margin: 0 0 16px
+          @media (max-width: 576px)
+            font-size: 15px
+            line-height: 18px
+            margin-bottom: 8px
         span
           display: block
           max-width: 390px
@@ -31,11 +37,18 @@ section.index-contacts
           line-height: 50px
           text-transform: uppercase
           color: #282828
+          @media (max-width: 576px)
+            font-size: 31px
+            line-height: 35px
       .desc
         font-size: 18px
         line-height: 28px
         color: #282828
         margin: 0 0 45px
+        @media (max-width: 576px)
+          font-size: 15px
+          line-height: 21px
+          margin-bottom: 20px
       .info
         display: flex
         align-items: center
@@ -87,6 +100,13 @@ section.index-contacts
           height: 164px
           border-radius: 50%
           background: url("../img/svg/phone.svg") center center / 67px 67px no-repeat
+          @media (max-width: 576px)
+            width: 117px
+            height: 117px
+            background-size: 35px 35px
+            top: auto
+            right: -25px
+            bottom: -40px
           &:after
             content: ''
             position: absolute

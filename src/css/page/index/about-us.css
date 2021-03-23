@@ -2,13 +2,22 @@ section.about-us {
   display: flex;
   align-items: center;
   margin-bottom: 195px; }
+  @media (max-width: 767px) {
+    section.about-us {
+      flex-direction: column;
+      margin-bottom: 90px; } }
   section.about-us .left-side {
     display: flex;
     flex-direction: column;
     position: relative;
     max-width: 910px;
     padding: 110px 80px 120px 0;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    width: 100%; }
+    @media (max-width: 576px) {
+      section.about-us .left-side {
+        padding-left: 20px;
+        padding-right: 20px; } }
     section.about-us .left-side:after {
       content: '';
       width: calc(((100vw - 1280px) / 2) + 100%);
@@ -24,6 +33,10 @@ section.about-us {
       @media (max-width: 920px) {
         section.about-us .left-side:after {
           width: 75vw; } }
+      @media (max-width: 767px) {
+        section.about-us .left-side:after {
+          width: calc(100% + 30px);
+          right: -15px; } }
     section.about-us .left-side:before {
       content: '';
       width: calc(((100vw - 1280px) / 2) + 100%);
@@ -39,11 +52,19 @@ section.about-us {
       @media (max-width: 920px) {
         section.about-us .left-side:before {
           width: 75vw; } }
+      @media (max-width: 767px) {
+        section.about-us .left-side:before {
+          width: calc(100% + 30px);
+          right: -15px; } }
     section.about-us .left-side .name {
       margin-left: 80px;
       display: flex;
       flex-direction: column;
       margin-bottom: 42px; }
+      @media (max-width: 576px) {
+        section.about-us .left-side .name {
+          margin-left: 0;
+          margin-bottom: 30px; } }
       section.about-us .left-side .name p {
         font-size: 18px;
         line-height: 22px;
@@ -64,6 +85,10 @@ section.about-us {
           section.about-us .left-side .name .title {
             font-size: 38px;
             line-height: 42px; } }
+        @media (max-width: 576px) {
+          section.about-us .left-side .name .title {
+            font-size: 26px;
+            line-height: 28px; } }
     section.about-us .left-side .desc > * {
       margin: 0 0 10px; }
       section.about-us .left-side .desc > *:last-child {
@@ -72,6 +97,10 @@ section.about-us {
       font-size: 18px;
       line-height: 28px;
       color: #282828; }
+      @media (max-width: 576px) {
+        section.about-us .left-side .desc p {
+          font-size: 15px;
+          line-height: 21px; } }
   section.about-us .btn {
     max-width: calc(100% - 910px);
     margin-left: 70px; }
@@ -83,3 +112,8 @@ section.about-us {
       section.about-us .btn {
         margin-left: 15px;
         margin-right: 15px; } }
+    @media (max-width: 767px) {
+      section.about-us .btn {
+        position: absolute;
+        bottom: 50px;
+        right: 0; } }

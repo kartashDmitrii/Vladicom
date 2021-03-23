@@ -6,6 +6,10 @@ section.logo-grid
     grid-auto-rows: auto
     border: solid #A7A7A7
     border-width: 0 1px 1px 0
+    @media (max-width: 767px)
+      grid-template-columns: 1fr 1fr 1fr
+    @media (max-width: 576px)
+      grid-template-columns: 1fr 1fr
     .elem
       display: flex
       align-items: center
@@ -14,6 +18,16 @@ section.logo-grid
       border: solid #A7A7A7
       border-width: 1px 0 0 1px
       box-sizing: border-box
+      @media (max-width: 1365px)
+        padding: 60px
+      @media (max-width: 820px)
+        padding: 40px
+      @media (max-width: 576px)
+        padding: 60px
+      @media (max-width: 480px)
+        padding: 60px 40px
+      @media (max-width: 360px)
+        padding: 40px 20px
       &:hover
         img
           filter: grayscale(0)

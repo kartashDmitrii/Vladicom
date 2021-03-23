@@ -3,15 +3,21 @@ section.news
   flex-direction: column
   .links
     padding: 0
-    margin: 0 0 48px
+    margin: 0 0 33px
     list-style: none
     display: flex
     align-items: center
+    flex-wrap: wrap
+    @media (max-width: 767px)
+      margin-bottom: 15px
     li
       font-size: 18px
       line-height: 25px
       color: #282828
-      margin: 0 40px 0 0
+      margin: 0 40px 15px 0
+      @media (max-width: 767px)
+        font-size: 15px
+        line-height: 18px
       a
         text-decoration: inherit
         color: inherit
@@ -20,6 +26,8 @@ section.news
     grid-template-columns: 1fr 1fr
     grid-gap: 40px
     margin-bottom: 88px
+    @media (max-width: 767px)
+      grid-template-columns: 1fr
     .elem
       display: flex
       flex-direction: column
@@ -38,12 +46,22 @@ section.news
         flex-direction: column
         background: #F6F6F6
         padding: 25px 5px 20px 30px
+        @media (max-width: 920px)
+          margin-left: 15px
+          margin-top: -30px
+          padding: 25px 5px 25px 15px
+          box-sizing: border-box
+        @media (max-width: 767px)
+          width: calc(100% - 15px)
         .name
           font-size: 14px
           line-height: 17px
           text-transform: uppercase
           color: #282828
           margin: 0 0 10px
+          @media (max-width: 767px)
+            font-size: 13px
+            line-height: 16px
         .title
           font-weight: 700
           font-size: 30px
@@ -51,6 +69,15 @@ section.news
           text-transform: uppercase
           color: #282828
           margin: 0
+          @media (max-width: 1365px)
+            font-size: 21px
+            line-height: 24px
+          @media (max-width: 767px)
+            font-size: 25px
+            line-height: 28px
+          @media (max-width: 360px)
+            font-size: 21px
+            line-height: 24px
         a
           font-size: 14px
           line-height: 28px
@@ -58,6 +85,18 @@ section.news
           margin: 0
           text-decoration: none
           padding-right: 46px
+          align-self: flex-end
+          position: relative
+          &:after
+            content: ''
+            width: 33px
+            height: 11px
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            margin: auto
+            background: url("../img/svg/arrow-green.svg") center center / 100% 100% no-repeat
   .btn
     align-self: center
     margin-bottom: 175px

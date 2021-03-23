@@ -6,6 +6,12 @@ section.logo-grid {
     grid-auto-rows: auto;
     border: solid #A7A7A7;
     border-width: 0 1px 1px 0; }
+    @media (max-width: 767px) {
+      section.logo-grid .grid {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media (max-width: 576px) {
+      section.logo-grid .grid {
+        grid-template-columns: 1fr 1fr; } }
     section.logo-grid .grid .elem {
       display: flex;
       align-items: center;
@@ -14,6 +20,21 @@ section.logo-grid {
       border: solid #A7A7A7;
       border-width: 1px 0 0 1px;
       box-sizing: border-box; }
+      @media (max-width: 1365px) {
+        section.logo-grid .grid .elem {
+          padding: 60px; } }
+      @media (max-width: 820px) {
+        section.logo-grid .grid .elem {
+          padding: 40px; } }
+      @media (max-width: 576px) {
+        section.logo-grid .grid .elem {
+          padding: 60px; } }
+      @media (max-width: 480px) {
+        section.logo-grid .grid .elem {
+          padding: 60px 40px; } }
+      @media (max-width: 360px) {
+        section.logo-grid .grid .elem {
+          padding: 40px 20px; } }
       section.logo-grid .grid .elem:hover img {
         filter: grayscale(0); }
       section.logo-grid .grid .elem img {
